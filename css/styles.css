@@ -1,0 +1,52 @@
+* {
+    font-family: Raleway, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo img {
+    width: 100px;
+    padding-left: 2px;
+}
+
+nav {
+    display: block;
+}
+
+.menu_nav ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0px;
+}
+
+.menu_nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.menu_nav ul li a {
+    line-height: 70px;
+    display: flex;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+}
+.menu_nav ul li a:hover
+{
+  color: #0065fc;
+  border-top: solid 3px #0065fc;
+}
