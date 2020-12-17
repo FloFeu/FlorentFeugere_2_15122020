@@ -17,7 +17,7 @@ header
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    font-size: 12px;
+    font-size: 1em;
     word-wrap: normal;
     }
 
@@ -139,12 +139,12 @@ input[type="button"]
 .filters
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
   height: auto;
   margin: 30px 0 0 0;
-  width: 50%;
+  width: 75%;
 }
 
 .filter-item
@@ -226,4 +226,54 @@ button span
 .circle-icon
 {
   color: #D9D9D9;
+}
+.hebergements {
+  background-color: #F2F2F2;
+  min-width: 350px;
+  width: auto;
+  height: 650px;
+  margin: 15px;
+  flex-grow: 2;
+  border-radius: 25px;
+}
+
+.trending {
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  min-width: 350px;
+  width; auto;
+  height: auto;
+  margin: 15px;
+  flex-grow: 1;
+}
+
+.main{
+  display: flex;
+  height: 620px;
+  flex-wrap: wrap;
+
+}
+
+.main h3{
+  padding: 45px;
+  font-size: 1.5em;
+}
+
+.house-choice{
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 200px;
+  margin: 15px 25px;
+
+}
+.house{
+  background-color: #FFFFFF;
+  min-width: 250px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  margin: 15px 0;
+  border-radius: 15px;
 }
