@@ -233,6 +233,8 @@ button span
   color: #D9D9D9;
 }
 
+/* Section hébergement */
+
 .hebergements {
   background-color: #F2F2F2;
   min-width: 350px;
@@ -243,6 +245,8 @@ button span
 
 }
 
+/* Aside populaires */
+
 .trending {
   background-color: #F2F2F2;
   border-radius: 25px;
@@ -252,11 +256,22 @@ button span
   flex-grow: 1;
 }
 
+/* section principale regroupant hébergements et populaires */
+
 .main{
   display: flex;
   height: auto;
   flex-wrap: wrap-reverse;
 }
+
+/* justification du titre */
+
+.main header{
+  font-size: 1.2em;
+  padding: 25px 25px 0 35px;
+}
+
+/* flexbox pour le choix des maisons */
 
 .house-choice{
   display: flex;
@@ -267,9 +282,12 @@ button span
 }
 
 .main a{
+  /* coloration noir et désactivation du soulignement noir liens */
   color: black;
   text-decoration: none;
 }
+
+/* flexbox dans chaque lien hébergement pour correctement afficher l'image et le texte, ombrage */
 
 .house{
   display: flex;
@@ -280,7 +298,10 @@ button span
   border-radius: 25px;
   margin: 1em;
   flex: 1;
+  box-shadow: 10px 10px 10px #E1E1E1;
 }
+
+/* positionnement de chaque image dans son cadre */
 
 .house .img{
   background-position: center;
@@ -289,6 +310,8 @@ button span
   margin: 5px 5px 0 5px;
   border-radius: 25px 25px 0 0;
 }
+
+/* lien vers chaque image */
 
 .img1{
   background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -314,6 +337,8 @@ button span
   background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
+/* réglages du texte de chaque lien hébergement */
+
 .house-details{
   flex-grow: 1;
   margin: 0;
@@ -321,15 +346,25 @@ button span
   padding-bottom: 10px;
 }
 
+/* marge sur le texte prix */
 .house-price{
   margin: 0 0 5px 0;
-
 }
+
+/* marge et mise en gras du nom de chaque hébergement */
 
 .house-name{
   margin: 5px 0;
   font-weight: 600;
 }
+
+/* mise en gras du prix */
+
+.price{
+  font-weight: 600;
+}
+
+/* couleurs de chaque étoile */
 
 .stars-blue{
   color: #0065FC;
@@ -339,13 +374,7 @@ button span
   color: #D9D9D9;
 }
 
-.main header{
-  padding: 25px 25px 0 35px;
-}
-
-.price{
-  font-weight: 600;
-}
+/* justification, taille et décoration du texte du footer */
 
 .main footer a{
   text-decoration: none;
