@@ -149,7 +149,6 @@ input[type="button"]
   flex-wrap: wrap;
   height: auto;
   margin: 30px 0 0 0;
-  width: 80%;
 }
 
 .filter-item
@@ -218,7 +217,16 @@ button span
   padding: 0 10px;
 }
 
-/* info */
+button:hover
+{
+  color: #FFFFFF;
+  background-color: #0065FC;
+  transition: 0.3s;
+}
+
+/*//////////////////
+ ////////info //////
+ /////////////////*/
 
 .info
 {
@@ -393,6 +401,8 @@ button span
 .card-details{
   align-self: center;
   padding-left: 25px;
+  padding: 2em 1em;
+
 }
 
 .card-name{
@@ -401,9 +411,6 @@ button span
 
 }
 
-.card-price{
-  padding-bottom: 2em;
-}
 
 /* Activités */
 
@@ -504,6 +511,8 @@ button span
   font-weight: 600;
   padding: 15px 15px;
   overflow: hidden;
+  pointer-events: none; /* rend le paragraphe
+  non interactif, et permet donc de cliquer sur  l'ancre en dessous */
 
 }
 
