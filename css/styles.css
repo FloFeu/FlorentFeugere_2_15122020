@@ -6,71 +6,110 @@ body
 {
     padding: 0px;
     height: auto;
+    margin-top: 0;
 }
 
 /* header */
 
-header
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    font-size: 1em;
-    word-wrap: normal;
-    margin: 0 5%;
+.banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+
 }
 
+.logo{
+  grid-column: 1 / 4;
+  padding-left: 10%;
+}
+
+
+.a1{
+  grid-column: 4;
+
+}
+
+.banner a{
+  text-align: center;
+  line-height: 100px;
+}
 
 .logo img
 {
-    width: 100px;
+
+    width: 115px;
     padding: 15px;
-    min-width: 100px;
 }
 
-ul
+
+.banner a
 {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  max-width: 800px;
-  margin-top: 0;
-}
-
-.menu_nav ul li
-{
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    justify-content: center;
-    width: 150px;
-    line-height: 98px;
-}
-
-.menu_nav ul li a
- {
-    display: flex;
     color: black;
     align-items: center;
     text-decoration: none;
 }
 
-.menu_nav ul li a:hover
+@media screen and (min-width: 641px)
 {
-  color: #0065FC;
-  border-top: solid 3px #0065FC;
+.banner a:hover
+  {
+    color: #0065FC;
+    border-top: solid 3px #0065FC;
+  }
 }
 
-.menu_nav ul li p
+.banner .subscribe
 {
   color: #0065FC;
   font-weight: bold;
 }
 
-.principale{
+@media screen and (max-width: 640px)
+{
+  .banner{
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .banner .a1{
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+
+  .banner .a2{
+    grid-row: 2;
+    grid-column: 4 / 7;
+  }
+
+  .banner a{
+    line-height: 45px;
+  }
+  }
+  .a1, .a2{
+    border-bottom: solid 3px #F2F2F2;
+  }
+
+  .a1:hover, .a2:hover{
+    border-bottom: solid 3px #0065FC;
+    color: #0065FC;
+    font-weight: 600;
+
+  }
+  .subscribe{
+    grid-column: 5/7;
+  }
+
+  .logo img{
+    padding-left: 0;
+  }
+}
+
+.principale
+{
   margin: 0 5%;
 }
+
 /* Menu principal */
 
 .search_menu
@@ -419,7 +458,7 @@ button:hover
   padding: 15px;
 }
 
-.grid{
+.grid-activity{
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
