@@ -2,26 +2,25 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Reservia</title>
     <link rel="stylesheet" href="css/styles.css">
+
     <link rel="icon" href="lib/Reservia.svg" />
     <script src="https://kit.fontawesome.com/ecdf6be2c2.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700&display=swap');
     </style>
   </head>
+
   <body>
-    <header >
+    <header class='banner' >
       <section class="logo">
         <img src="lib/Reservia@3x.png" alt="logo du site">
       </section>
-      <nav class="menu_nav">
-        <ul>
-          <li><a href="#hebergements">Hébergements</a></li>
-          <li><a href="#activity">Activités</a></li>
-          <li><p>S'inscrire</p></li>
-        </ul>
-      </nav>
+          <a href="#hebergements" class='a1'>Hébergements</a>
+          <a href="#activity" class="a2">Activités</a>
+          <a href="#" class='subscribe'>S'inscrire</a>
     </header>
 
     <section class="principale">
@@ -37,26 +36,28 @@
           <span class="map_marker">
             <i class="fas fa-map-marker-alt"></i>
           </span>
-          <input class='field_txt' type="search" value="ex: Marseille, France" ><input class='search_btn'type="button" name="search" value="Rechercher">
+          <input class='field_txt' type="search" value="ex: Marseille, France" ><input class='search_btn' type="button" name="search" value="Rechercher">
+          <a class="btn btn-success" href="#">
+          <i class="fas fa-search"></i></a>
         </div>
 
         <div class="filters">
 
           <div class='filtres-title'><p>Filtres</p></div>
 
-          <div class="filter-item">
+          <div class="filter-item fi1">
             <button type=filter><i class="fas fa-money-bill-wave filter-icon"></i><p>Économiques</P></button>
           </div>
 
-          <div class="filter-item">
+          <div class="filter-item fi2">
             <button type=filter><i class="fas fa-child filter-icon"></i><p>Familial</p></button>
 
           </div>
-          <div class="filter-item">
+          <div class="filter-item fi3">
             <button type=filter><i class="fas fa-heart filter-icon"></i><p>Romantique</p></button>
 
           </div>
-          <div class="filter-item">
+          <div class="filter-item fi4">
           <button type=filter><i class="fas fa-dog filter-icon"></i><p>Animaux Autorisés</p></button>
           </div>
         </div>
@@ -278,7 +279,7 @@
           <h2>Activités à Marseille</h2>
         </header>
 
-        <section class="grid">
+        <section class="grid-activity">
 
           <a href='' class="activity activity1">
             <img src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
