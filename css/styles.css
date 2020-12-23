@@ -452,11 +452,8 @@ button:hover
     flex-wrap: wrap;
   }
 
-  .house-choice{
-  }
-
   .house{
-
+    min-width: 90%;
   }
 
 }
