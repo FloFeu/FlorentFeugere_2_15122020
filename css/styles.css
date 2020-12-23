@@ -161,12 +161,12 @@ body
     font-size: 1.6em;
     text-align: left;
     margin-bottom: 5px;
-    margin-left: 2%;
+    margin-left: 1em;
   }
 
   .title1 p{
     margin-top: 5px;
-    margin-left: 2%;
+    margin-left: 1em;
   }
 
   input[type="button"]{
@@ -187,7 +187,8 @@ body
   }
 
   .search{
-    margin-left: 10%;
+    width: 100%;
+    text-align: center;
 
   }
 
@@ -210,17 +211,14 @@ body
   border-radius: 15px;
   overflow: hidden;
   height: 50px;
-  align-items: center;
-  justify-content: center;
-
-
 }
 
 .search .map_marker
 {
   margin: 0;
   background-color: #F2F2F2;
-  padding: 25px 15px 25px 15px;
+  padding: 15px;
+  border-radius: 15px 0 0 15px;
   width: 1em;
   height:inherit;
 }
