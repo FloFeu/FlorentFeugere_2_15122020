@@ -414,7 +414,7 @@ button:hover
 
 /* Section hébergement */
 
-.hebergements {
+#hebergements {
   background-color: #F2F2F2;
   min-width: 350px;
   margin: 15px;
@@ -446,7 +446,7 @@ button:hover
     border-radius: 0;
   }
 
-  .hebergements{
+  #hebergements{
     margin: 0;
     background-color: #FFFFFF;
     flex-wrap: wrap;
@@ -456,7 +456,7 @@ button:hover
   }
 
   .house{
-  
+
   }
 
 }
