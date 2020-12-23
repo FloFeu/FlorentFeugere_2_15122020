@@ -81,6 +81,7 @@ body
 @media screen and (max-width: 640px)
 {
   .banner{
+    width: 100%;
     grid-template-rows: 1fr 1fr;
   }
 
@@ -347,12 +348,14 @@ button:hover
 @media screen and (max-width: 640px)
 {
   .filters{
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
-    align-items: center;
-    margin-left: 2%;
+    grid-gap: 2%;
+    align-items: flex-start;
+    margin: 0 2%;
+
 
   }
 
@@ -453,7 +456,7 @@ button:hover
   }
 
   .house{
-    min-width:90%
+  
   }
 
 }
