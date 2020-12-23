@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Reservia</title>
     <link rel="stylesheet" href="css/styles.css">
-
     <link rel="icon" href="lib/Reservia.svg" />
     <script src="https://kit.fontawesome.com/ecdf6be2c2.js" crossorigin="anonymous"></script>
     <style>
@@ -16,7 +15,7 @@
   <body>
     <header class='banner' >
       <section class="logo">
-        <img src="lib/Reservia@3x.png" alt="logo du site">
+        <h1><img src="lib/Reservia@3x.png" alt="logo du site"></h1>
       </section>
           <a href="#hebergements" class='a1'>Hébergements</a>
           <a href="#activity" class="a2">Activités</a>
@@ -27,7 +26,7 @@
       <section class="search_menu">
 
         <div class="title1">
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
           <p>En plein centre ville ou en pleine nature</p>
         </div>
 
@@ -46,19 +45,19 @@
           <div class='filtres-title'><p>Filtres</p></div>
 
           <div class="filter-item fi1">
-            <button type=filter><i class="fas fa-money-bill-wave filter-icon"></i><p>Économiques</P></button>
+            <button onclick="filterSelection('')"><i class="fas fa-money-bill-wave filter-icon"></i>Économiques</button>
           </div>
 
           <div class="filter-item fi2">
-            <button type=filter><i class="fas fa-child filter-icon"></i><p>Familial</p></button>
+            <button onclick="filterSelection('')"><i class="fas fa-child filter-icon"></i>Familial</button>
 
           </div>
           <div class="filter-item fi3">
-            <button type=filter><i class="fas fa-heart filter-icon"></i><p>Romantique</p></button>
+            <button onclick="filterSelection('')"><i class="fas fa-heart filter-icon"></i>Romantique</button>
 
           </div>
           <div class="filter-item fi4">
-          <button type=filter><i class="fas fa-dog filter-icon"></i><p>Animaux Autorisés</p></button>
+          <button onclick="filterSelection('')"><i class="fas fa-dog filter-icon"></i>Animaux Autorisés</button>
           </div>
         </div>
 
@@ -81,7 +80,7 @@
           <div class="house-choice">
             <a href="" class="house">
 
-              <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+              <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
               <div class="house-details">
                 <p class="house-name">Auberge la Cannebière</p>
                 <p class="house-price">Nuit à partir de <span class="price">25€</span></p>
@@ -181,7 +180,7 @@
                 <p class="house-name">Hôtel chez Amina</p>
                 <p class="house-price">Nuit à partir de <span class="price">96€</span></p>
 
-                <!-- <span class="stars-blue"> -->
+                <span class="stars-blue">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -230,7 +229,7 @@
             </a>
 
             <a href="" class="card-house">
-              <img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+              <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
 
               <div class="card-details">
                 <p class="card-name">Au coeur de l'eau Chambres d'hôtes</p>
@@ -249,7 +248,7 @@
             </a>
 
             <a href="" class="card-house">
-              <img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+              <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
 
               <div class="card-details">
                 <p class="card-name">Hôtel Tout bleu et Blanc</p>
@@ -282,29 +281,29 @@
         <section class="grid-activity">
 
           <a href='' class="activity activity1">
-            <img src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
           </a>
 
           <a href='' class="activity activity2">
-            <img src="images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
           </a>
 
           <a href='' class="activity activity3">
-            <img src="images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
           </a>
 
 
           <a href='' class="activity activity4">
-            <img src="images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
           </a>
 
 
           <a href='' class="activity activity5">
-            <img src="images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
           </a>
 
           <a href='' class="activity activity6">
-            <img src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
           </a>
 
           <p class="p1">Vieux port</p>

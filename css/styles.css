@@ -1,11 +1,10 @@
 * {
-  font-family: 'Raleway', Arial;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 
 body
 {
     padding: 0px;
-    height: auto;
     margin-top: 0;
 }
 
@@ -46,17 +45,16 @@ body
 
 .logo img
 {
-
-    width: 115px;
-    padding: 15px;
+  width: 115px;
+  padding: 15px;
 }
 
 
 .banner a
 {
-    color: black;
-    align-items: center;
-    text-decoration: none;
+  color: black;
+  align-items: center;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 641px)
@@ -155,17 +153,19 @@ body
 {
   .search_menu{
     padding: 0;
-    margin: 0 2em;
+
 
   }
-  .title1 h1{
+  .title1 h2{
     font-size: 1.6em;
     text-align: left;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    margin-left: 2%;
   }
 
   .title1 p{
     margin-top: 5px;
+    margin-left: 2%;
   }
 
   input[type="button"]{
@@ -187,8 +187,7 @@ body
 
   .search{
     margin-left: 10%;
-    margin-top: 10px;
-    margin-bottom: 0;
+
   }
 
 }
@@ -210,6 +209,10 @@ body
   border-radius: 15px;
   overflow: hidden;
   height: 50px;
+  align-items: center;
+  justify-content: center;
+
+
 }
 
 .search .map_marker
@@ -217,7 +220,8 @@ body
   margin: 0;
   background-color: #F2F2F2;
   padding: 25px 15px 25px 15px;
-  width: 50px;
+  width: 1em;
+  height:inherit;
 }
 
 .fa-map-marker-alt:before{
@@ -231,18 +235,19 @@ input[type="search"]
   border-left: none;
   border-right: none;
   height:inherit;
-  width: 245px;
   margin: 0;
   text-align: center;
   font-weight: 600;
   font-size: 1em;
+  max-width: 200px;
+
 }
 
 input[type="button"]
 {
   background-color: #0065FC;
   border: none;
-  height: 50px;
+  height:inherit;
   width: 145px;
   margin: 0;
   color: #FFFFFF;
@@ -269,6 +274,7 @@ input[type="button"]
   align-items: baseline;
   height: inherit;
   margin: 0 20px;
+
 }
 
 .filters .filtres-title
@@ -277,10 +283,8 @@ input[type="button"]
 
 }
 
-.filters p{
-  padding: 0 25px;
-  margin: 0;
-  font-size: 1.2em;
+.filters {
+
 }
 
 .filter-icon{
@@ -288,10 +292,11 @@ input[type="button"]
    color: #0065FC;
    padding: 17.5px;
    background-color: #DEEBFF;
-   border
+   border: 1px solid #DEEBFF;
    border-radius: 50px;
    position: relative;
-   right: 1px;
+   right: 2px;
+   margin-right: 1em;
 }
 
 .fa-child:before{
@@ -310,13 +315,14 @@ input[type="button"]
 button
 {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border: solid 1px #D9D9D9;
   border-radius: 50px;
-  width: auto;
   background-color: #FFFFFF;
   font-weight: 600;
   padding : 0;
+  padding-right: 1.5em;
 }
 
 button i
@@ -346,14 +352,15 @@ button:hover
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
     align-items: center;
+    margin-left: 2%;
 
   }
 
-  .filters-title{
+  .filters-title p{
     grid-column: 1;
     grid-row: 1;
-
   }
+
 
   .fi1{
     grid-column: 1;
