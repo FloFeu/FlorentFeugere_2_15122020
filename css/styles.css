@@ -8,7 +8,7 @@ body
     margin-top: 0;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
   body{
     margin: 0;
   }
@@ -25,6 +25,7 @@ body
   align-items: center;
   margin-top: 0;
 
+
 }
 
 .logo{
@@ -40,7 +41,7 @@ body
 
 .banner a{
   text-align: center;
-  line-height: 100px;
+  line-height: 125px;
 }
 
 .logo img
@@ -118,7 +119,7 @@ body
   }
 }
 
-@media screen and (min-width: 641px)
+@media screen and (min-width: 1025px)
 {
   .principale
   {
@@ -194,6 +195,60 @@ body
 
 }
 
+@media screen and (max-width: 1024px)
+  {
+    .search_menu{
+      padding-top: 0;
+    }
+
+    .search_menu {
+      text-align: center;
+    }
+
+    .filters{
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap: 2%;
+      align-items: flex-start;
+      margin: 0 2%;
+    }
+
+    .filtres-title{
+      grid-row: 1;
+      text-align: left;
+      padding-left: 5%;
+    }
+
+    .filter-item{
+      justify-content: left;
+    }
+
+    .fi1{
+      grid-row: 2;
+    }
+
+    .fi2{
+      grid-row: 2;
+    }
+
+    .fi3{
+      grid-row: 3;
+    }
+
+    .fi4{
+      grid-row: 3;
+    }
+
+    .info{
+      text-align: left;
+      padding-left: 3%;
+
+    }
+
+  }
+
 @media screen and (min-width: 641px)
  {
    .search .fa-search {
@@ -255,17 +310,18 @@ input[type="button"]
 }
 
 /* les filtres */
-
-.filters
+@media screen and (min-width: 1025px)
 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-wrap: wrap;
-  height: auto;
-  margin: 30px 0 0 0;
+  .filters
+  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 30px 0 0 0;
+  }
 }
-
 .filter-item
 {
   display: flex;
@@ -282,9 +338,6 @@ input[type="button"]
 
 }
 
-.filters {
-
-}
 
 .filter-icon{
    font-size: 1em;
@@ -353,7 +406,6 @@ button:hover
     grid-gap: 2%;
     align-items: flex-start;
     margin: 0 2%;
-
 
   }
 
@@ -452,6 +504,44 @@ button:hover
 
   .house{
     min-width: 90%;
+  }
+
+  .card-choice{
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px)
+{
+  .main{
+    flex-wrap: wrap-reverse;
+  }
+
+  .trending{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .card-choice{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    }
+
+  .card-house{
+    overflow: hidden;
+  }
+
+  #hebergements{
+    margin: 1em 0;
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+  }
+
+  #hebergements footer{
+    padding-bottom: 0;
   }
 
 }
@@ -561,9 +651,15 @@ button:hover
 
 .card-choice{
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   padding: 25px 25px;
+}
+
+@media screen and (min-width: 1025px)
+{
+  .card-choice{
+    flex-direction: column;
+  }
 }
 
 .trending header{
@@ -614,7 +710,7 @@ button:hover
   padding: 15px;
 }
 
-@media screen and (min-width: 641px)
+@media screen and (min-width: 1025px)
 {
   .grid-activity{
   padding: 15px;
@@ -623,6 +719,66 @@ button:hover
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 3em;
   height: 500px;
+  }
+  .activity1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 11;
+    z-index: 1;
+  }
+
+  .p1{
+    grid-column: 1 /2;
+    grid-row: 9 /11;
+  }
+
+  .activity2{
+    grid-column: 2/3;
+    grid-row: 1 / 7;
+  }
+
+  .p2{
+    grid-column: 2/3;
+    grid-row: 5/7;
+  }
+
+  .activity3{
+    grid-column: 2/3;
+    grid-row: 7/ 11;
+  }
+
+  .p3{
+    grid-column: 2/3;
+    grid-row: 9/11;
+  }
+
+  .activity4{
+    grid-column: 3/4;
+    grid-row: 1 / 11;
+  }
+
+  .p4{
+    grid-column: 3/4;
+    grid-row: 9/11;
+  }
+
+  .activity5{
+    grid-column: 4/5;
+    grid-row: 1 / 6;
+  }
+
+  .p5{
+    grid-column: 4/5;
+    grid-row: 4/6;
+  }
+
+  .activity6{
+    grid-column: 4/5;
+    grid-row: 6/11;
+  }
+
+  .p6{
+    grid-column: 4/5;
+    grid-row: 9/11;
   }
 }
 
@@ -639,66 +795,6 @@ button:hover
   box-shadow: 10px 10px 10px #E1E1E1;
 }
 
-.activity1{
-  grid-column: 1 / 2;
-  grid-row: 1 / 11;
-  z-index: 1;
-}
-
-.p1{
-  grid-column: 1 /2;
-  grid-row: 9 /11;
-}
-
-.activity2{
-  grid-column: 2/3;
-  grid-row: 1 / 7;
-}
-
-.p2{
-  grid-column: 2/3;
-  grid-row: 5/7;
-}
-
-.activity3{
-  grid-column: 2/3;
-  grid-row: 7/ 11;
-}
-
-.p3{
-  grid-column: 2/3;
-  grid-row: 9/11;
-}
-
-.activity4{
-  grid-column: 3/4;
-  grid-row: 1 / 11;
-}
-
-.p4{
-  grid-column: 3/4;
-  grid-row: 9/11;
-}
-
-.activity5{
-  grid-column: 4/5;
-  grid-row: 1 / 6;
-}
-
-.p5{
-  grid-column: 4/5;
-  grid-row: 4/6;
-}
-
-.activity6{
-  grid-column: 4/5;
-  grid-row: 6/11;
-}
-
-.p6{
-  grid-column: 4/5;
-  grid-row: 9/11;
-}
 
 .grid-activity p{
   z-index: 2;
@@ -710,6 +806,83 @@ button:hover
   overflow: hidden;
   pointer-events: none; /* rend le paragraphe
   non interactif, et permet donc de cliquer sur  l'ancre en dessous */
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px)
+{
+  #activity{
+    padding: 0 1em;
+    margin-top: 0;
+  }
+
+  .grid-activity{
+    margin: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3em;
+    height: 500px;
+  }
+  .activity1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    z-index: 1;
+  }
+
+  .p1{
+    grid-column: 1 /2;
+    grid-row: 4 /6;
+  }
+
+  .activity2{
+    grid-column: 1/2;
+    grid-row: 6 / 11;
+  }
+
+  .p2{
+    grid-column: 1/2;
+    grid-row: 9/11;
+  }
+
+  .activity3{
+    grid-column: 2/3;
+    grid-row: 1/ 6;
+  }
+
+  .p3{
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  .activity4{
+    grid-column: 2/3;
+    grid-row: 6/ 11;
+  }
+
+  .p4{
+    grid-column: 2/3;
+    grid-row: 9/11;
+  }
+
+  .activity5{
+    grid-column: 3/4;
+    grid-row: 1 / 6;
+  }
+
+  .p5{
+    grid-column: 3/4;
+    grid-row: 4/6;
+  }
+
+  .activity6{
+    grid-column: 3/4;
+    grid-row: 6/11;
+  }
+
+  .p6{
+    grid-column: 3/4;
+    grid-row: 9/11;
+  }
 }
 
 @media screen and (max-width: 640px)
@@ -812,7 +985,7 @@ button:hover
 
 
 .bottom-page ul{
-  display:flex;
+  display: flex;
 }
 
 .bottom-page div{
@@ -834,5 +1007,16 @@ button:hover
   .bottom-page div{
     padding: 0;
     width: 100%;
+  }
+}
+@media screen and (max-width: 1024px)
+{
+  .bottom-page {
+    justify-content: space-between;
+    padding : 0 2em;
+  }
+
+  .bottom-page div{
+    padding-right: 0;
   }
 }
