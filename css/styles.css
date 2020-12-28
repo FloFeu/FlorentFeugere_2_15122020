@@ -34,6 +34,11 @@ body
   line-height: 125px;
 }
 
+.banner a:hover{
+  color: #0065FC;
+  border-top: solid 3px #0065FC;
+}
+
 .logo img
 {
   width: 115px;
