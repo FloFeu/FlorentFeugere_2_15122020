@@ -484,25 +484,11 @@ button:hover
 //////// MEDIA QUERIES ////////////
 /////////////////////////////////*/
 
-
 @media screen and (min-width: 641px)
 {
-.banner a:hover
-  {
-    color: #0065FC;
-    border-top: solid 3px #0065FC;
-    border-bottom: none;
+  .search .fa-search {
+    display: none;
   }
-
-  .banner a{
-    border-bottom: none;
-  }
-
-
- .search .fa-search {
-   display: none;
- }
-
 }
 
 @media screen and (min-width: 1025px)
@@ -599,6 +585,7 @@ button:hover
 
 @media screen and (min-width: 641px) and (max-width: 1024px)
 {
+
   .filters{
     width: 100%;
     display: grid;
@@ -743,6 +730,18 @@ button:hover
 
 @media screen and (max-width: 1024px)
 {
+  .banner a:hover{
+    color: #0065FC;
+    border-top: solid 3px #0065FC;
+    border-bottom: none;
+  }
+
+  .banner a{
+    border-bottom: none;
+  }
+
+
+
   body{
     margin: 0;
   }
@@ -770,7 +769,8 @@ button:hover
     padding-right: 0;
   }
 }
-/*  */
+
+
 @media screen and (max-width: 640px)
 {
   .banner{
