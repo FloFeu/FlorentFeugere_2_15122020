@@ -580,7 +580,7 @@ button:hover
 
 
   .fi1{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 2;
   }
 
@@ -751,41 +751,7 @@ button:hover
     text-align: center;
   }
 
-  .filters{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-gap: 2%;
-    align-items: flex-start;
-    margin: 0 2%;
-  }
 
-  .filtres-title{
-    grid-row: 1;
-    text-align: left;
-    padding-left: 5%;
-  }
-
-  .filter-item{
-    justify-content: left;
-  }
-
-  .fi1{
-    grid-row: 2;
-  }
-
-  .fi2{
-    grid-row: 2;
-  }
-
-  .fi3{
-    grid-row: 3;
-  }
-
-  .fi4{
-    grid-row: 3;
-  }
 
   .info{
     text-align: left;
@@ -895,6 +861,42 @@ button:hover
 
 @media screen and (min-width: 641px) and (max-width: 1024px)
 {
+  .filters{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 2%;
+    align-items: flex-start;
+    margin: 0 2%;
+  }
+
+  .filtres-title{
+    grid-row: 1;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .filter-item{
+    justify-content: left;
+  }
+
+  .fi1{
+    grid-row: 2;
+  }
+
+  .fi2{
+    grid-row: 2;
+  }
+
+  .fi3{
+    grid-row: 3;
+  }
+
+  .fi4{
+    grid-row: 3;
+  }
+  
   .main{
     flex-wrap: wrap-reverse;
   }
